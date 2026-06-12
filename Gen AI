@@ -1,0 +1,205 @@
+AI-Artificial Intelligence
+It replaces human intelligence
+There are various types of AI like Traditional AI,Gen AI...
+Traditional AI:Analyze the content and give answers 
+Gen AI-Generate the content like photos etc,. by using user query 
+
+Gen AI(Generative AI)
+Concepts:
+1.LLM(Large LAnguage Model):Trained by billions of large datasets
+    Ex:Chatgpt
+    Meta,Open AI,Gemini.. various types
+Query-what you want to ask
+Prompt:how you are asking
+Query Flow:
+User Query → Prompt → LLM → Response
+2.Prompting: Describing
+    Types:Good,Bad,Excellent
+    Give clear prompt
+3.Fine Tune:
+    Model that trains personal data
+    Update it every day    
+Fine-tuning means updating/training the model with new data.
+We need to update the model whenever new information is required.
+Instead of retraining the whole model, we can maintain private/custom data.
+Used when the model must learn domain-specific knowledge.
+4.RAG (Retrieval Augmented Generation)
+Uses external sources.
+Retrieves data before generating a response.
+Data sources can be:
+PDFs
+Audio files
+Videos
+HTML/Websites
+Documents
+Databases
+Process
+User asks a query.
+System checks external knowledge sources.
+Relevant information is retrieved.
+LLM generates an answer using retrieved information.
+Fine-Tuning vs RAG
+Fine-Tuning
+Train the model.
+Cost-efficient for repeated specialized tasks.
+Knowledge becomes part of the model.
+Requires retraining when data changes.
+Difficult to maintain frequent updates.
+RAG
+2 parts:
+Data Ingestion Pipeline-Injecting data into vectors
+Data Retrieval Pipeline
+
+Give documents directly to the model.
+No retraining required.
+Easier to maintain and update.
+Uses external knowledge sources.
+Better when information changes frequently.
+LLM (Large Language Model)
+Definition
+
+LLM = Large Language Model
+
+Query Flow
+
+User Query → Prompt → LLM → Response
+
+Prompt
+
+Prompt = The instruction/question you give to the model.
+
+Example:
+
+"How are you?"
+"Write a Python program."
+"Summarize this document."
+Internal Working of an LLM
+Human Language → Machine Language
+User enters text.
+Text is converted into tokens.
+Tokens are converted into embeddings.
+Embeddings are processed by the model.
+Model predicts the next token.
+Tokens are converted back into text.
+Response is generated.
+Embeddings:
+Embeddings are numerical vector representations of text.
+Example:
+"What is Python?"
+        ↓
+Embedding Vector
+[0.25, 0.81, 0.42, ...]
+
+Purpose:
+
+Capture semantic meaning.
+Used in search, retrieval, and RAG systems.
+Tokens
+
+A token is the smallest unit processed by an LLM.
+
+Examples:
+
+"ChatGPT is great"
+
+Tokens:
+["Chat", "GPT", "is", "great"]
+Frontend
+
+Frontend handles:
+
+User interface
+Login pages
+Forms
+Displaying responses
+
+Example Technologies:
+
+HTML
+CSS
+JavaScript
+React
+Backend / Response Generation
+Next Token Prediction
+
+LLMs generate text by predicting the most probable next token repeatedly.
+
+Example:
+
+Input: "India is a"
+
+Prediction:
+→ country
+
+This process continues until the complete response is generated.
+
+Frameworks
+
+Frameworks help developers build applications more easily by providing predefined components and tools.
+
+Examples:
+
+Django
+Flask
+FastAPI
+Spring Boot
+LangChain
+
+LangChain is a framework used for:
+
+LLM applications
+RAG systems
+Agent development
+Prompt management
+
+Advantages:
+
+Reduces manual coding effort.
+Connects LLMs with external tools.
+Simplifies building AI applications.
+LangGraph
+
+LangGraph is used to:
+
+Build AI agents with workflows.
+Create multi-step reasoning systems.
+Manage complex agent interactions.
+Groq
+
+Groq provides fast inference for LLMs through APIs.
+
+Uses:
+
+Running LLMs quickly.
+Lower latency responses.
+Integration with LangChain.
+
+Example:
+
+from langchain_groq import ChatGroq
+
+llm = ChatGroq(
+    model="llama-3.3-70b-versatile"
+)
+API Key
+
+API Key = Secret credential used to access AI services.
+
+Example:
+
+import os
+
+api_key = os.getenv("GROQ_API_KEY")
+LLaMA
+
+LLaMA (Large Language Model Meta AI)
+
+Developed by Meta.
+Open-source LLM family.
+Used for chatbots, RAG, and AI applications.
+
+Examples:
+
+Llama 3
+Llama 3.1
+Llama 3.3
